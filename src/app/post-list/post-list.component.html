@@ -1,0 +1,22 @@
+<div>
+
+        <h1>Post</h1>
+        
+        <ul>
+        
+         <app-postlistitem *ngFor="let listposts of listpost; let index = index"
+         [title]="listposts[index]?.getTitle()"
+         [content]="listposts[index]?.getContent()"
+         [datecr]="listposts[index]?.getCreated_at()">
+
+          </app-postlistitem>
+         <button class="btn btn-success">Love it </button>
+         <button class="btn btn-danger">don't love</button>
+        
+        </ul>
+        
+        </div>
+
+
+
+
